@@ -3,12 +3,14 @@
 2. Go into IDMLfile/Stories/ and find largest Story_etc.xml - very scientific
 3. Use path to that XML file in the line 3
 4. Run PHP in browser, view source (yeah, it's great) and grab all Hyperlinks rows
-5. Insert rows into IDMLfile/designmap.xml in between rows like these:
-```
-<idPkg:Story src="Stories/Story_u4db.xml" />
+5. Insert rows into IDMLfile/designmap.xml in between rows like these: 
 
-<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Symbol" Name="$ID/kIndexGroup_Symbol" Include="true" Priority="0" HeaderType="Nothing" />
-```
+   ```
+   <idPkg:Story src="Stories/Story_u4db.xml" />  
+   
+   <IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Symbol" Name="$ID/kIndexGroup_Symbol" Include="true" Priority="0" HeaderType="Nothing" />  
+   ``` 
+
 6. Save and close
 7. Pack up file - I use ePubPack as zipping up the file does strange things to the mimetype or something that breaks the file
 8. Change .epub to .idml
